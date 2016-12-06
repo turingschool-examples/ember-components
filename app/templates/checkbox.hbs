@@ -1,0 +1,10 @@
+<h1>Checkbox Demo</h1>
+
+<!-- loop through todos located in routes/checkbox.js -->
+{{#each model as |todo|}}
+
+  <!-- create checkbox component for each todo -->
+  {{checkbox-complete
+    content=todo.title}}
+
+{{/each}}
