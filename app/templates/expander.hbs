@@ -1,0 +1,13 @@
+<h1>Expander Demo</h1>
+<div>
+
+  {{#each model as |movie|}}
+
+    {{title-expander
+      title=movie.title
+      content=movie.content
+      toggledIsShowing='toggled'}}
+
+  {{/each}}
+
+</div>

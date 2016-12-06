@@ -1,0 +1,15 @@
+<bold> {{title}} </bold>
+
+{{#if isShowing }}
+  <span {{action 'toggleShowing'}}> [ Hide ] </span>
+
+{{else}}
+  <span {{action 'toggleShowing'}}> [ Show ] </span>
+
+{{/if}}
+
+{{#if isShowing }}
+
+  <div> {{content}} </div>
+
+{{/if}}
